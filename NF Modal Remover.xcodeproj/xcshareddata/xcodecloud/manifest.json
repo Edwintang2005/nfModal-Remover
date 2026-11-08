@@ -1,0 +1,9 @@
+{
+  "id" : "d6f12332-fc95-4698-9333-95e99dc0adf7",
+  "targets" : [
+    {
+      "id" : "2e0e6749-4b60-4c80-b8ee-8ca37e64598f",
+      "name" : "NF Modal Remover"
+    }
+  ]
+}

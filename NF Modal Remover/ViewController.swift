@@ -9,7 +9,7 @@ import Cocoa
 import SafariServices
 import WebKit
 
-let extensionBundleIdentifier = "au.com.intelligenceassist.NFModalRemover.Extension"
+let extensionBundleIdentifier = "com.edwintang.NFModalRemover.Extension"
 
 class ViewController: NSViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
