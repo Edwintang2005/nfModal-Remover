@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>NF Modal Remover</h1>
+  </header>
+
+  <section id="current" hidden>
+    <div class="current-text">
+      <div class="label">This site</div>
+      <div id="current-host" class="host"></div>
+      <div id="current-note" class="note"></div>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="current-toggle">
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <section>
+    <div class="label">Active on</div>
+    <ul id="site-list"></ul>
+    <p id="empty" class="note" hidden>No sites yet. Turn it on for the site you're on, or add one below.</p>
+    <form id="add-form">
+      <input id="add-input" type="text" placeholder="example.com" autocomplete="off" spellcheck="false">
+      <button type="submit">Add</button>
+    </form>
+    <p id="error" class="error" hidden></p>
+  </section>
+
+  <script src="sites.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
