@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .pair { position: absolute; top: 250px; width: 600px; height: 600px; }
+    .pair.before { left: 80px; }
+    .pair.after { left: 760px; }
+    .pair .window { left: 0; top: 0; width: 1000px; height: 1000px; transform: scale(.6); transform-origin: 0 0; }
+    .pair .tag { top: -38px; }
+    .pair.after .tag { color: #1f7a3a; }
+    .nag { transform: scale(1.15); }
+  </style>
+</head>
+<body>
+  <div class="headline">
+    <h1>Read the page, not the pop-up</h1>
+    <p>Newsletter nags and overlays vanish before you see them.</p>
+  </div>
+
+  <div class="pair before">
+    <div class="tag">Before</div>
+    <div class="window" data-host="news.example.com">
+      <div class="overlay">
+        <div class="nag">
+          <span class="x">×</span>
+          <h3>Don’t miss a story</h3>
+          <p>Sign up for our daily newsletter to keep reading.</p>
+          <div class="field"></div>
+          <div class="cta">Subscribe</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pair after">
+    <div class="tag">With NF Modal Remover</div>
+    <div class="window" data-host="news.example.com" data-ext="active"></div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

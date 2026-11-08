@@ -13,3 +13,7 @@ build/
 *.ipa
 *.dSYM
 *.dSYM.zip
+
+# Local release notes (not published)
+APP_STORE.md
+PRIVACY.md

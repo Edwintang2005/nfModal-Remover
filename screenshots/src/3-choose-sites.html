@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .window { left: 600px; top: 210px; width: 760px; height: 760px; }
+    .window .page { opacity: .45; }
+    .window .article { grid-template-columns: 1fr; }
+    .window .side { display: none; }
+    /* arrow tip under the toolbar icon (centre x = 1268); scaled up from the tip */
+    .popover { --arrow: 240px; left: 1020px; top: 268px; transform: scale(1.4); transform-origin: 248px -8px; }
+    .notes { position: absolute; left: 110px; top: 300px; width: 430px; display: grid; gap: 34px; }
+    .notes div { font-size: 22px; line-height: 1.35; color: #3a3a3c; }
+    .notes b { display: block; font-size: 24px; color: #1d1d1f; margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <div class="headline">
+    <h1>You decide where it runs</h1>
+    <p>Nothing happens on a site until you add it.</p>
+  </div>
+
+  <div class="window" data-host="shop.example.co" data-ext="active"></div>
+
+  <div class="notes">
+    <div><b>One switch per site</b>Turn it on for the page you’re on, straight from the toolbar.</div>
+    <div><b>Covers subdomains</b>Adding example.com also covers www. and shop.</div>
+    <div><b>Private by design</b>Your list stays on your Mac. No tracking, no network requests.</div>
+  </div>
+
+  <div class="popover">
+    <iframe src="popup-add.html" width="300" height="300" scrolling="no"></iframe>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .window { left: 120px; top: 210px; width: 1200px; height: 760px; }
+    /* arrow tip sits under the toolbar icon (centre x = 1228) */
+    .popover { --arrow: 222px; left: 998px; top: 268px; }
+  </style>
+</head>
+<body>
+  <div class="headline">
+    <h1>Pop-ups gone, on the sites you choose</h1>
+    <p>Hides <code>.nf-modal</code> overlays and gives you your scrolling back.</p>
+  </div>
+
+  <div class="window" data-host="news.example.com" data-ext="active"></div>
+
+  <div class="popover">
+    <iframe src="popup-main.html" width="300" height="300" scrolling="no"></iframe>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

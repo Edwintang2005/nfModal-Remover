@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Static copy of popup.html while adding a site, styled by the real popup.css -->
+  <link rel="stylesheet" href="../../NF%20Modal%20Remover%20Extension/Resources/popup.css">
+  <style>
+    :root { --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea; --field:#f2f2f7; --accent:#0a84ff; --danger:#d70015; color-scheme: light; }
+    input[type="text"] { outline: 2px solid var(--accent); outline-offset: -1px; }
+  </style>
+</head>
+<body>
+  <header><h1>NF Modal Remover</h1></header>
+
+  <section id="current">
+    <div class="current-text">
+      <div class="label">This site</div>
+      <div class="host">shop.example.co</div>
+    </div>
+    <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+  </section>
+
+  <section>
+    <div class="label">Active on</div>
+    <ul>
+      <li><span>forum.example.net</span><button>×</button></li>
+      <li><span>news.example.com</span><button>×</button></li>
+      <li><span>recipes.example.org</span><button>×</button></li>
+    </ul>
+    <form onsubmit="return false">
+      <input type="text" value="blog.example.io">
+      <button type="submit">Add</button>
+    </form>
+  </section>
+</body>
+</html>
