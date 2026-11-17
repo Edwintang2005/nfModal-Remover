@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "NF Modal Remover",
   "description": "Removes .nf-modal overlays, only on the websites you choose.",
-  "version": "1.0",
+  "version": "2.0",
   "icons": {
     "48": "images/icon-48.png",
     "96": "images/icon-96.png",
