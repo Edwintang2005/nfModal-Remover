@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Remove nf-modal
-// @description  Hides and removes .nf-modal overlays the moment they appear
+// @description  Hides and removes the full-screen .nf-modal interstitial the moment it appears
 // @version      1.0
 // @run-at       document-start
 // --- List your sites below, one @match per line ---
@@ -9,7 +9,8 @@
 // ==/UserScript==
 
 (() => {
-  const SELECTOR = '.nf-modal';
+  // Only the full-screen interstitial layer, not every .nf-modal dialog on the site.
+  const SELECTOR = '.nf-modal.interstitial-full-screen';
 
   // 1) Hide it with CSS straight away. This works before any JS sees the
   //    modal, so there's no flash, and it costs nothing.

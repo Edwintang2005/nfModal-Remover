@@ -3,7 +3,8 @@
   if (globalThis.__nfModalRemover) return; // already running in this frame
   globalThis.__nfModalRemover = true;
 
-  const SELECTOR = '.nf-modal';
+  // Only the full-screen interstitial layer, not every .nf-modal dialog on the site.
+  const SELECTOR = '.nf-modal.interstitial-full-screen';
 
   // 1) Hide it with CSS straight away: no flash, no cost.
   const style = document.createElement('style');
